@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #002b36, #002b36);
+}
+
+.window {
+    width: auto;
+    background-color: #111316;
+    border-radius: 10px;
+}
+
+.window__actions {
+    position: relative;
+    padding: 10px;
+}
+.window__actions:before, .window__actions:after {
+    content: " ";
+    display: table;
+}
+.window__actions:after {
+    clear: both;
+}
+
+.window__actionButton {
+    display: inline-block;
+    float: left;
+    border-radius: 100%;
+}
+.window__actionButton:before {
+    content: " ";
+    display: block;
+    height: 13px;
+    width: 13px;
+}
+.window__actionButton:not(:last-child) {
+    margin-right: 7px;
+}
+
+.window__actionButton--close {
+    background-color: #ff5f58;
+}
+
+.window__actionButton--minimize {
+    background-color: #ffbd2e;
+}
+
+.window__actionButton--fullscreen {
+    background-color: #29ca41;
+}
+
+.window__content {
+    display: block;
+    padding: 10px 10px 10px;
+    margin: 0;
+    white-space: pre-line;
+    line-height: 1.33;
+    color: #f1f1f1;
+}
